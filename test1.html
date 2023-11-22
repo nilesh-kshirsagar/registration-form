@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            border: 1px solid black;
+        }
+       body{
+        background-color: aqua;
+       }
+       table,form{
+        border: 1px solid blue;
+        padding: 5px;
+        width: 60%;
+        margin: auto;
+        background-color: skyblue;
+        box-shadow: 5px 5px 20px 3px blue;
+       }
+       input{
+        padding: 4px;
+        margin-bottom: 5px;
+       
+       }
+       button{
+        padding: 10px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+       }
+       h1{
+        font-size: 50px;
+       }
+    </style>
+</head>
+
+<body>
+    <h1>Student Registration Form</h1>
+
+    <div>
+
+    
+    <table>
+        <form action="">
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" placeholder="Enter full name"  required autocomplete="off"></td>
+            </tr>
+            <tr>
+                <td><label for="fname">Father's Name:</label></td>
+                <td><input type="text" id="fname" required autocomplete="off"></td>
+            </tr>
+            <tr>
+                <td><label for="mname">Mother's Name:</label></td>
+                <td><input type="text" id="mname" required autocomplete="off"></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" required autocomplete="off"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" required autocomplete="off"></td>
+            </tr>
+            <tr>
+                <td><label for="male">Gender:</label></td>
+                <td>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="others">
+                    <label for="others">others</label><br>
+                </td>
+               </tr>
+            <tr>
+                <td><label for="date">Date of Birth:</label></td>
+                <td><input type="date" id="date" required autocomplete="off"></td>
+            </tr>
+            <tr>
+                <td><label for="Address">Address:</label></td>
+                <td><textarea name="" id="Address" cols="22" rows="2"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="blood">Blood Group:</label></td>
+                   <td>
+                    <select name="blood" id="blood">
+                        <option value="" disabled selected>Select</option>
+                        <option value="O+">O+</option>
+                        <option value="A+">A+</option>
+                        <option value="B+">B+</option>
+                        <option value="AB">AB</option>
+                    </select>
+                   </td>
+               </tr>
+               <tr>
+                <td><label for="male">Department:</label></td>
+                <td>
+                    <input type="radio" name="dept" id="cse">
+                    <label for="cse">CSE</label>
+                    <input type="radio" name="dept" id="eee">
+                    <label for="eee">EEE</label>
+                    <input type="radio" name="dept" id="bba">
+                    <label for="bba">BBA</label><br>
+                </td>
+               </tr>
+               <tr>
+                <td>Course:</td>
+                <td>
+                    <input type="checkbox" value="html" id="c">
+                    <label for="c">C</label>
+                    <input type="checkbox" value="css" id="c++">
+                    <label for="c++">C++</label>
+                    <input type="checkbox" value="javascript" id="java">
+                    <label for="java">Java</label>
+                    <input type="checkbox" value="javascript" id="ai">
+                    <label for="ai">AI</label>
+                    <input type="checkbox" value="javascript" id="javascript">
+                    <label for="javascript">Machine Learning</label>
+                    <input type="checkbox" value="javascript" id="Robotics">
+                    <label for="Robotics">Robotics</label><br>
+                </td>
+               </tr>
+
+               <tr>
+                <td><label for="photo">Photo</label></td>
+                <td><input type="file"></td>
+               </tr>
+               <tr >
+                <td colspan="2" style="text-align: center;"><button type="submit">Submit</button>
+                <button type="reset">Reset</button></td>
+               </tr>
+        </form>
+    </table>
+</div>
+</body>
+
+</html>
